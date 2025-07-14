@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular - Finanzas y Negocios Internacionales</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Malla Curricular</h1>
+  <!-- Repetición de semestres -->
+  <!-- Semestre 1 -->
+  <div class="semestre">
+    <h2 onclick="toggle(this)">🌱 Semestre 1</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('introduccion')">Introducción a las Finanzas</li>
+      <li onclick="mostrarDescripcion('logistica')">Logística y DFI</li>
+      <li onclick="mostrarDescripcion('pensamiento')">Pensamiento Matemático</li>
+      <li onclick="mostrarDescripcion('textos')">Comprensión y Producción de Textos I</li>
+      <li onclick="mostrarDescripcion('catedra')">Cátedra de la Orinoquía</li>
+    </ul>
+  </div>
+
+  <!-- Semestre 2 al 9 -->
+  <div class="semestre"><h2 onclick="toggle(this)">📘 Semestre 2</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('contabilidad')">Contabilidad General</li>
+      <li onclick="mostrarDescripcion('economia')">Economía I</li>
+      <li onclick="mostrarDescripcion('estadistica')">Estadística Básica</li>
+      <li onclick="mostrarDescripcion('derecho')">Fundamentos de Derecho</li>
+      <li onclick="mostrarDescripcion('textos2')">Comprensión y Producción de Textos II</li>
+    </ul>
+  </div>
+
+  <div class="semestre"><h2 onclick="toggle(this)">📗 Semestre 3</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('finanzas2')">Finanzas Corporativas I</li>
+      <li onclick="mostrarDescripcion('investigacion')">Metodología de la Investigación</li>
+      <li onclick="mostrarDescripcion('mercadeo')">Mercadeo Internacional</li>
+      <li onclick="mostrarDescripcion('economia2')">Economía II</li>
+      <li onclick="mostrarDescripcion('logistica2')">Logística Internacional</li>
+    </ul>
+  </div>
+
+  <div class="semestre"><h2 onclick="toggle(this)">📙 Semestre 4</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('finanzas3')">Finanzas Corporativas II</li>
+      <li onclick="mostrarDescripcion('comercio')">Comercio Exterior</li>
+      <li onclick="mostrarDescripcion('administracion')">Administración de Empresas</li>
+      <li onclick="mostrarDescripcion('analisis')">Análisis Financiero</li>
+      <li onclick="mostrarDescripcion('idioma')">Inglés Financiero</li>
+    </ul>
+  </div>
+
+  <div class="semestre"><h2 onclick="toggle(this)">📒 Semestre 5</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('derivado')">Instrumentos Derivados</li>
+      <li onclick="mostrarDescripcion('inversion')">Inversión y Portfolio</li>
+      <li onclick="mostrarDescripcion('finanzas3b')">Finanzas Internacionales I</li>
+      <li onclick="mostrarDescripcion('econometria')">Econometría Básica</li>
+      <li onclick="mostrarDescripcion('negocios')">Negocios Internacionales I</li>
+    </ul>
+  </div>
+
+  <div class="semestre"><h2 onclick="toggle(this)">📓 Semestre 6</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('finanzas4')">Finanzas Internacionales II</li>
+      <li onclick="mostrarDescripcion('gestion')">Gestión Financiera Avanzada</li>
+      <li onclick="mostrarDescripcion('tributaria')">Finanzas Tributarias</li>
+      <li onclick="mostrarDescripcion('negocios2')">Negocios Internacionales II</li>
+      <li onclick="mostrarDescripcion('electiva1')">Electiva 1</li>
+    </ul>
+  </div>
+
+  <div class="semestre"><h2 onclick="toggle(this)">📔 Semestre 7</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('seminario')">Seminario de Finanzas</li>
+      <li onclick="mostrarDescripcion('portafolio')">Gestión de Portafolios</li>
+      <li onclick="mostrarDescripcion('compliance')">Compliance Financiero</li>
+      <li onclick="mostrarDescripcion('electiva2')">Electiva 2</li>
+      <li onclick="mostrarDescripcion('idioma2')">Inglés Avanzado</li>
+    </ul>
+  </div>
+
+  <div class="semestre"><h2 onclick="toggle(this)">📕 Semestre 8</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('etica')">Ética y Responsabilidad Social</li>
+      <li onclick="mostrarDescripcion('negocios3')">Estrategias en Negocios Internacionales</li>
+      <li onclick="mostrarDescripcion('electiva3')">Electiva 3</li>
+      <li onclick="mostrarDescripcion('finanzas5')">Finanzas para PYMES</li>
+      <li onclick="mostrarDescripcion('gestion2')">Gestión de Riesgos Financieros</li>
+    </ul>
+  </div>
+
+  <div class="semestre"><h2 onclick="toggle(this)">📗 Semestre 9</h2>
+    <ul>
+      <li onclick="mostrarDescripcion('trabajo')">Trabajo de Grado</li>
+      <li onclick="mostrarDescripcion('practica')">Práctica Profesional</li>
+      <li onclick="mostrarDescripcion('electiva4')">Electiva 4</li>
+      <li onclick="mostrarDescripcion('seminario2')">Seminario de Investigación</li>
+      <li onclick="mostrarDescripcion('idioma3')">Inglés de Redacción Financiera</li>
+    </ul>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="cerrarModal()" class="close">&times;</span>
+      <h3 id="tituloMateria"></h3>
+      <p id="descripcionMateria"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
